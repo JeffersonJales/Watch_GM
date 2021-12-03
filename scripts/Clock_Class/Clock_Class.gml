@@ -1,8 +1,5 @@
 /// By @jalesjefferson
 /// source code in 
-
-function do_nothing() {} 
-
 function Clock (time, loop = true, callback = do_nothing, clock_speed = 1) constructor {
 	__time = time;
 	__max_time = time;
@@ -45,15 +42,21 @@ function Clock (time, loop = true, callback = do_nothing, clock_speed = 1) const
 	
 	static clock_change_speed = function(new_speed){
 		__clock_speed = new_speed;
-		__clock_speed_pause = new_speed
 	}
 	
 	static clock_pause = function(){
+		__clock_speed_pause = __clock_speed;
 		__clock_speed = 0;	
 	}
 	
 	static clock_resume = function(){
 		__clock_speed = __clock_speed_pause;
 	}
+		
+	static clock_kill = function(){
+		clock_step = do_nothing;
+		clock_step_cb = do_nothing;
+	}
 }
 
+function do_nothing() {} 
