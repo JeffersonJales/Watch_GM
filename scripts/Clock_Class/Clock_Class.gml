@@ -1,34 +1,25 @@
 /// By @jalesjefferson
-/// source code in 
-function Clock (time, loop = true, callback = do_nothing, clock_speed = 1) constructor {
+/// source code https://github.com/JeffersonJales/Clock_GMS2
+
+/// Clock that returns a boolean
+function Clock (time, loop = true, clock_speed = 1) constructor {
 	__time = time;
 	__max_time = time;
 	__loop = loop;
 	
 	__clock_speed = clock_speed;
 	__clock_speed_pause = clock_speed;
-	
-	__clock_callback = callback;
 
 	static clock_step = function(){
 		__time -= __clock_speed;
 		
 		if(__time < 0){
-			if(!__loop) clock_pause();
+			if(!__loop) clock_kill(); // You can change it to clock_pause too
 			clock_reset();
 			return true;	
 		}
 		
 		return false;
-	}
-	
-	static clock_step_cb = function(){
-		__time -= __clock_speed;
-		if(__time < 0){
-			if(!__loop) clock_pause();
-			clock_reset();
-			__clock_callback();
-		}
 	}
 	
 	static clock_reset = function(){
@@ -55,8 +46,22 @@ function Clock (time, loop = true, callback = do_nothing, clock_speed = 1) const
 		
 	static clock_kill = function(){
 		clock_step = do_nothing;
-		clock_step_cb = do_nothing;
 	}
+}
+
+/// Clock with callback
+function ClockCB(time, callback, loop = true, clock_speed = 1) : Clock(time, loop, clock_speed) constructor {
+	__clock_callback = callback;
+
+	static clock_step = function(){
+		__time -= __clock_speed;
+		if(__time < 0){
+			if(!__loop) clock_kill();
+			clock_reset();
+			__clock_callback();
+		}
+	}
+	
 }
 
 function do_nothing() {} 
