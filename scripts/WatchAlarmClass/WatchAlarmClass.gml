@@ -43,10 +43,9 @@ function WatchAlarmClass(_time, _loop = true, _spd = 1) constructor{
 	static set_loop = function(_loop){ loop = _loop; }
 	static set_speed = function(_spd = 1){ speed = _spd; speed_pause = _spd; }
 	
-	static set_amount_time = function(_time = 0, restart = true){ 
+	static set_amount_time = function(_time = 0, _reset = true){ 
 		amount_time = _time; 
-		if(restart) 
-			reset();
+		if(_reset) reset();
 	}
 	
 	static get_time = function(){ return amount_time;}

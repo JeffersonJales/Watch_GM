@@ -13,8 +13,8 @@
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Example","folderPath":"folders/Example.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Watch","folderPath":"folders/Watch.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Class","folderPath":"folders/Watch/System/Class.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"System","folderPath":"folders/Watch/System.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Class","folderPath":"folders/Watch/System/Class.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Watch Global","folderPath":"folders/Watch/Watch Global.yy",},
   ],
   "IncludedFiles": [],
