@@ -1,41 +1,48 @@
 {
-  "resources": [
-    {"id":{"name":"Clock_Class","path":"scripts/Clock_Class/Clock_Class.yy",},"order":11,},
-    {"id":{"name":"obj_clock_example","path":"objects/obj_clock_example/obj_clock_example.yy",},"order":1,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+  "resourceType": "GMProject",
+  "resourceVersion": "1.7",
+  "name": "Clock",
+  "AudioGroups": [
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
-  "Options": [
-    {"name":"Linux","path":"options/linux/options_linux.yy",},
-    {"name":"macOS","path":"options/mac/options_mac.yy",},
-    {"name":"Main","path":"options/main/options_main.yy",},
-    {"name":"Windows","path":"options/windows/options_windows.yy",},
-    {"name":"operagx","path":"options/operagx/options_operagx.yy",},
-  ],
-  "isDnDProject": false,
-  "isEcma": false,
-  "tutorialPath": "",
   "configs": {
-    "name": "Default",
     "children": [],
+    "name": "Default",
   },
+  "defaultScriptType": 1,
+  "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Example","folderPath":"folders/Example.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Watch","folderPath":"folders/Watch.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Class","folderPath":"folders/Watch/System/Class.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"System","folderPath":"folders/Watch/System.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Watch Global","folderPath":"folders/Watch/Watch Global.yy",},
+  ],
+  "IncludedFiles": [],
+  "isEcma": false,
+  "LibraryEmitters": [],
+  "MetaData": {
+    "IDEVersion": "2023.6.0.92",
+  },
+  "resources": [
+    {"id":{"name":"watch_global_pause","path":"scripts/watch_global_pause/watch_global_pause.yy",},},
+    {"id":{"name":"watch_alarm","path":"scripts/watch_alarm/watch_alarm.yy",},},
+    {"id":{"name":"__watch_system","path":"scripts/__watch_system/__watch_system.yy",},},
+    {"id":{"name":"watch_global_add","path":"scripts/watch_global_add/watch_global_add.yy",},},
+    {"id":{"name":"WatchCallbackClass","path":"scripts/WatchCallbackClass/WatchCallbackClass.yy",},},
+    {"id":{"name":"WatchAlarmClass","path":"scripts/WatchAlarmClass/WatchAlarmClass.yy",},},
+    {"id":{"name":"obj_watch_example","path":"objects/obj_watch_example/obj_watch_example.yy",},},
+    {"id":{"name":"watch_global_resume","path":"scripts/watch_global_resume/watch_global_resume.yy",},},
+    {"id":{"name":"watch_global_clear","path":"scripts/watch_global_clear/watch_global_clear.yy",},},
+    {"id":{"name":"watch_global_kill","path":"scripts/watch_global_kill/watch_global_kill.yy",},},
+    {"id":{"name":"watch_callback","path":"scripts/watch_callback/watch_callback.yy",},},
+    {"id":{"name":"watch_global_remove","path":"scripts/watch_global_remove/watch_global_remove.yy",},},
+    {"id":{"name":"__watch_config","path":"scripts/__watch_config/__watch_config.yy",},},
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+  ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
-  "Folders": [
-    {"folderPath":"folders/Example.yy","order":12,"resourceVersion":"1.0","name":"Example","tags":[],"resourceType":"GMFolder",},
-  ],
-  "AudioGroups": [
-    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
-  ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
-  "IncludedFiles": [],
-  "MetaData": {
-    "IDEVersion": "2.3.7.603",
-  },
-  "resourceVersion": "1.4",
-  "name": "Clock",
-  "tags": [],
-  "resourceType": "GMProject",
 }
