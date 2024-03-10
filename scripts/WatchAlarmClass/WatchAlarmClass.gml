@@ -60,9 +60,10 @@ function WatchAlarmClass(_time, _loop = true, _spd = 1) constructor{
 	static get_percentage = function(){ return amount_time / amount_time_max;}
 
 	/// General Getter / Setters | Please, change if you need it
+	static is_global = function(){ return is_globally_handled; }
 	static get_time = function(){ return amount_time;}
 	static get_status = function(){ return status; }
-	
+
 	static set_loop = function(_loop){ loop = _loop; }
 	static set_speed = function(_spd = 1){ speed = _spd; speed_pause = _spd; }
 	static set_amount_time = function(_time){ 
@@ -72,5 +73,4 @@ function WatchAlarmClass(_time, _loop = true, _spd = 1) constructor{
 		amount_time_max = _time;
 		if(reset) reset();
 	}
-	
 }
