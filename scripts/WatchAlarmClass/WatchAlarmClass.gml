@@ -1,7 +1,7 @@
 ///@desc Creates a new watch that returns true when it finishes. Use its step function!
 ///@param {Real}	_time	The time, in frames, to return true on step()
 ///@param {Bool}	_loop	When completed, case looping, it will restart the watch, case not, it will kill itself
-///@param {Real}	_spd	The Watch Speed. How much it will decrement watch time per step call
+///@param {Real}	_spd	The Watch speed. How much it will decrement watch time per step call
 
 function WatchAlarmClass(_time, _loop = true, _spd = 1) constructor{
 	amount_time = _time;			/// The time, in frames, to return true on step()
