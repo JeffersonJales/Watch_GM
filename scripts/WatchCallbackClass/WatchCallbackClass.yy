@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "WatchCallbackClass",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Class",
-    "path": "folders/Watch/System/Class.yy",
+  "$GMScript":"",
+  "%Name":"WatchCallbackClass",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"WatchCallbackClass",
+  "parent":{
+    "name":"Class",
+    "path":"folders/Watch/System/Class.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

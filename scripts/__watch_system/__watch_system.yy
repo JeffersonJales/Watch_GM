@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "__watch_system",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "System",
-    "path": "folders/Watch/System.yy",
+  "$GMScript":"",
+  "%Name":"__watch_system",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__watch_system",
+  "parent":{
+    "name":"System",
+    "path":"folders/Watch/System.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

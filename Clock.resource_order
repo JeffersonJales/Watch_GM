@@ -1,9 +1,9 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Watch","order":1,"path":"folders/Watch.yy",},
     {"name":"Watch Global","order":2,"path":"folders/Watch/Watch Global.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"watch_global_pause","order":3,"path":"scripts/watch_global_pause/watch_global_pause.yy",},
     {"name":"watch_alarm","order":3,"path":"scripts/watch_alarm/watch_alarm.yy",},
     {"name":"__watch_system","order":1,"path":"scripts/__watch_system/__watch_system.yy",},

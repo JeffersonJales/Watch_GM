@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "watch_callback",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Watch",
-    "path": "folders/Watch.yy",
+  "$GMScript":"",
+  "%Name":"watch_callback",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"watch_callback",
+  "parent":{
+    "name":"Watch",
+    "path":"folders/Watch.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

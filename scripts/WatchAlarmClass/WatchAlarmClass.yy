@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "WatchAlarmClass",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Class",
-    "path": "folders/Watch/System/Class.yy",
+  "$GMScript":"",
+  "%Name":"WatchAlarmClass",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"WatchAlarmClass",
+  "parent":{
+    "name":"Class",
+    "path":"folders/Watch/System/Class.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
