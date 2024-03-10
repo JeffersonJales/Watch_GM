@@ -4,13 +4,14 @@
 ///@param {Real}	_spd	The Watch speed. How much it will decrement watch time per step call
 
 function WatchAlarmClass(_time, _loop = true, _spd = 1) constructor{
-	amount_time = _time;			/// The time, in frames, to return true on step()
-	amount_time_max = _time;		/// The max time, in frames, for the watch
-	loop = _loop;					/// When completed, the watch will continue to work or not
-									
-	speed = _spd;					/// The watch speed, the amout time it ticks the watch per frame, default is 1 frame per frame
-	speed_pause = _spd;				/// The watch speed before its have been paused	
-	status = WATCH_STATUS_ALIVE;	/// The watch status, starts alive
+	amount_time = _time;				/// The time, in frames, to return true on step()
+	amount_time_max = _time;			/// The max time, in frames, for the watch
+	loop = _loop;						/// When completed, the watch will continue to work or not
+										
+	speed = _spd;						/// The watch speed, the amout time it ticks the watch per frame, default is 1 frame per frame
+	speed_pause = _spd;					/// The watch speed before its have been paused	
+	status = WATCH_STATUS_ALIVE;		/// The watch status, starts alive
+	is_globally_handled = false;		/// Is the watch is globally handled ?
 	
 	/// @desc It will descrease the timer based on its speed. When the watch finished it will return true
 	/// @return {Bool}

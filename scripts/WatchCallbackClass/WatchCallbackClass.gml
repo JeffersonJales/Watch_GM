@@ -3,7 +3,7 @@
 ///@param {Function}	_callback	The callback will be triggered on the watch finishes
 ///@param {Bool}		_loop		When completed, case looping, it will restart the watch, case not, it will kill itself
 ///@param {Real}		_spd		The Watch speed. How much it will decrement watch time per step call
-
+///@return {Struct.WatchCallbackClass}
 function 
 	WatchCallbackClass(_time, _callback, _loop = true, _spd = 1) : 
 	WatchAlarmClass(_time, _loop, _spd) constructor {
